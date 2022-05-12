@@ -1,0 +1,6 @@
+<div *ngIf="show">
+    <h3>data sharing between parent to child</h3>
+</div>
+
+<input #box type="text">
+<button (click)="DataUpdateEvent.emit(box.value)">update</button>

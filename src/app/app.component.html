@@ -1,0 +1,7 @@
+<button (click)="isshow()">show</button>
+<app-header [show]="show1"></app-header>
+<button (click)="ishide()">clear</button>
+
+<h2>{{title}}</h2>
+
+<app-header (DataUpdateEvent)="updateTitle($event)"></app-header>
